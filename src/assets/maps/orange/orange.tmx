@@ -1,0 +1,743 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.2" tiledversion="1.3.3" orientation="isometric" renderorder="right-down" width="16" height="16" tilewidth="256" tileheight="128" infinite="0" backgroundcolor="#3a1630" nextlayerid="8" nextobjectid="7">
+ <tileset firstgid="1" name="orange" tilewidth="256" tileheight="512" tilecount="240" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <image width="256" height="512" source="assets/arrow_E.png"/>
+  </tile>
+  <tile id="1">
+   <image width="256" height="512" source="assets/arrow_N.png"/>
+  </tile>
+  <tile id="2">
+   <image width="256" height="512" source="assets/arrow_S.png"/>
+  </tile>
+  <tile id="3">
+   <image width="256" height="512" source="assets/arrow_W.png"/>
+  </tile>
+  <tile id="4">
+   <image width="256" height="512" source="assets/arrowWall_E.png"/>
+  </tile>
+  <tile id="5">
+   <image width="256" height="512" source="assets/arrowWall_N.png"/>
+  </tile>
+  <tile id="6">
+   <image width="256" height="512" source="assets/arrowWall_S.png"/>
+  </tile>
+  <tile id="7">
+   <image width="256" height="512" source="assets/arrowWall_W.png"/>
+  </tile>
+  <tile id="8">
+   <image width="256" height="512" source="assets/block_E.png"/>
+  </tile>
+  <tile id="9">
+   <image width="256" height="512" source="assets/block_N.png"/>
+  </tile>
+  <tile id="10">
+   <image width="256" height="512" source="assets/block_S.png"/>
+  </tile>
+  <tile id="11">
+   <image width="256" height="512" source="assets/block_W.png"/>
+  </tile>
+  <tile id="12">
+   <image width="256" height="512" source="assets/blockAngle_E.png"/>
+  </tile>
+  <tile id="13">
+   <image width="256" height="512" source="assets/blockAngle_N.png"/>
+  </tile>
+  <tile id="14">
+   <image width="256" height="512" source="assets/blockAngle_S.png"/>
+  </tile>
+  <tile id="15">
+   <image width="256" height="512" source="assets/blockAngle_W.png"/>
+  </tile>
+  <tile id="16">
+   <image width="256" height="512" source="assets/blockHalf_E.png"/>
+  </tile>
+  <tile id="17">
+   <image width="256" height="512" source="assets/blockHalf_N.png"/>
+  </tile>
+  <tile id="18">
+   <image width="256" height="512" source="assets/blockHalf_S.png"/>
+  </tile>
+  <tile id="19">
+   <image width="256" height="512" source="assets/blockHalf_W.png"/>
+  </tile>
+  <tile id="20">
+   <image width="256" height="512" source="assets/blockQuarter_E.png"/>
+  </tile>
+  <tile id="21">
+   <image width="256" height="512" source="assets/blockQuarter_N.png"/>
+  </tile>
+  <tile id="22">
+   <image width="256" height="512" source="assets/blockQuarter_S.png"/>
+  </tile>
+  <tile id="23">
+   <image width="256" height="512" source="assets/blockQuarter_W.png"/>
+  </tile>
+  <tile id="24">
+   <image width="256" height="512" source="assets/column_E.png"/>
+  </tile>
+  <tile id="25">
+   <image width="256" height="512" source="assets/column_N.png"/>
+  </tile>
+  <tile id="26">
+   <image width="256" height="512" source="assets/column_S.png"/>
+  </tile>
+  <tile id="27">
+   <image width="256" height="512" source="assets/column_W.png"/>
+  </tile>
+  <tile id="28">
+   <image width="256" height="512" source="assets/columnBlocks_E.png"/>
+  </tile>
+  <tile id="29">
+   <image width="256" height="512" source="assets/columnBlocks_N.png"/>
+  </tile>
+  <tile id="30">
+   <image width="256" height="512" source="assets/columnBlocks_S.png"/>
+  </tile>
+  <tile id="31">
+   <image width="256" height="512" source="assets/columnBlocks_W.png"/>
+  </tile>
+  <tile id="32">
+   <image width="256" height="512" source="assets/columnCorner_E.png"/>
+  </tile>
+  <tile id="33">
+   <image width="256" height="512" source="assets/columnCorner_N.png"/>
+  </tile>
+  <tile id="34">
+   <image width="256" height="512" source="assets/columnCorner_S.png"/>
+  </tile>
+  <tile id="35">
+   <image width="256" height="512" source="assets/columnCorner_W.png"/>
+  </tile>
+  <tile id="36">
+   <image width="256" height="512" source="assets/crate_E.png"/>
+  </tile>
+  <tile id="37">
+   <image width="256" height="512" source="assets/crate_N.png"/>
+  </tile>
+  <tile id="38">
+   <image width="256" height="512" source="assets/crate_S.png"/>
+  </tile>
+  <tile id="39">
+   <image width="256" height="512" source="assets/crate_W.png"/>
+  </tile>
+  <tile id="40">
+   <image width="256" height="512" source="assets/doorClosed_E.png"/>
+  </tile>
+  <tile id="41">
+   <image width="256" height="512" source="assets/doorClosed_N.png"/>
+  </tile>
+  <tile id="42">
+   <image width="256" height="512" source="assets/doorClosed_S.png"/>
+  </tile>
+  <tile id="43">
+   <image width="256" height="512" source="assets/doorClosed_W.png"/>
+  </tile>
+  <tile id="44">
+   <image width="256" height="512" source="assets/doorOpen_E.png"/>
+  </tile>
+  <tile id="45">
+   <image width="256" height="512" source="assets/doorOpen_N.png"/>
+  </tile>
+  <tile id="46">
+   <image width="256" height="512" source="assets/doorOpen_S.png"/>
+  </tile>
+  <tile id="47">
+   <image width="256" height="512" source="assets/doorOpen_W.png"/>
+  </tile>
+  <tile id="48">
+   <image width="256" height="512" source="assets/doorway_E.png"/>
+  </tile>
+  <tile id="49">
+   <image width="256" height="512" source="assets/doorway_N.png"/>
+  </tile>
+  <tile id="50">
+   <image width="256" height="512" source="assets/doorway_S.png"/>
+  </tile>
+  <tile id="51">
+   <image width="256" height="512" source="assets/doorway_W.png"/>
+  </tile>
+  <tile id="52">
+   <image width="256" height="512" source="assets/doorwayBottom_E.png"/>
+  </tile>
+  <tile id="53">
+   <image width="256" height="512" source="assets/doorwayBottom_N.png"/>
+  </tile>
+  <tile id="54">
+   <image width="256" height="512" source="assets/doorwayBottom_S.png"/>
+  </tile>
+  <tile id="55">
+   <image width="256" height="512" source="assets/doorwayBottom_W.png"/>
+  </tile>
+  <tile id="56">
+   <image width="256" height="512" source="assets/doorwayCenter_E.png"/>
+  </tile>
+  <tile id="57">
+   <image width="256" height="512" source="assets/doorwayCenter_N.png"/>
+  </tile>
+  <tile id="58">
+   <image width="256" height="512" source="assets/doorwayCenter_S.png"/>
+  </tile>
+  <tile id="59">
+   <image width="256" height="512" source="assets/doorwayCenter_W.png"/>
+  </tile>
+  <tile id="60">
+   <image width="256" height="512" source="assets/doorwayLeft_E.png"/>
+  </tile>
+  <tile id="61">
+   <image width="256" height="512" source="assets/doorwayLeft_N.png"/>
+  </tile>
+  <tile id="62">
+   <image width="256" height="512" source="assets/doorwayLeft_S.png"/>
+  </tile>
+  <tile id="63">
+   <image width="256" height="512" source="assets/doorwayLeft_W.png"/>
+  </tile>
+  <tile id="64">
+   <image width="256" height="512" source="assets/doorwayLeftBottom_E.png"/>
+  </tile>
+  <tile id="65">
+   <image width="256" height="512" source="assets/doorwayLeftBottom_N.png"/>
+  </tile>
+  <tile id="66">
+   <image width="256" height="512" source="assets/doorwayLeftBottom_S.png"/>
+  </tile>
+  <tile id="67">
+   <image width="256" height="512" source="assets/doorwayLeftBottom_W.png"/>
+  </tile>
+  <tile id="68">
+   <image width="256" height="512" source="assets/doorwayMiddle_E.png"/>
+  </tile>
+  <tile id="69">
+   <image width="256" height="512" source="assets/doorwayMiddle_N.png"/>
+  </tile>
+  <tile id="70">
+   <image width="256" height="512" source="assets/doorwayMiddle_S.png"/>
+  </tile>
+  <tile id="71">
+   <image width="256" height="512" source="assets/doorwayMiddle_W.png"/>
+  </tile>
+  <tile id="72">
+   <image width="256" height="512" source="assets/doorwayMiddleBottom_E.png"/>
+  </tile>
+  <tile id="73">
+   <image width="256" height="512" source="assets/doorwayMiddleBottom_N.png"/>
+  </tile>
+  <tile id="74">
+   <image width="256" height="512" source="assets/doorwayMiddleBottom_S.png"/>
+  </tile>
+  <tile id="75">
+   <image width="256" height="512" source="assets/doorwayMiddleBottom_W.png"/>
+  </tile>
+  <tile id="76">
+   <image width="256" height="512" source="assets/doorwayRight_E.png"/>
+  </tile>
+  <tile id="77">
+   <image width="256" height="512" source="assets/doorwayRight_N.png"/>
+  </tile>
+  <tile id="78">
+   <image width="256" height="512" source="assets/doorwayRight_S.png"/>
+  </tile>
+  <tile id="79">
+   <image width="256" height="512" source="assets/doorwayRight_W.png"/>
+  </tile>
+  <tile id="80">
+   <image width="256" height="512" source="assets/doorwayRightBottom_E.png"/>
+  </tile>
+  <tile id="81">
+   <image width="256" height="512" source="assets/doorwayRightBottom_N.png"/>
+  </tile>
+  <tile id="82">
+   <image width="256" height="512" source="assets/doorwayRightBottom_S.png"/>
+  </tile>
+  <tile id="83">
+   <image width="256" height="512" source="assets/doorwayRightBottom_W.png"/>
+  </tile>
+  <tile id="84">
+   <image width="256" height="512" source="assets/fence_E.png"/>
+  </tile>
+  <tile id="85">
+   <image width="256" height="512" source="assets/fence_N.png"/>
+  </tile>
+  <tile id="86">
+   <image width="256" height="512" source="assets/fence_S.png"/>
+  </tile>
+  <tile id="87">
+   <image width="256" height="512" source="assets/fence_W.png"/>
+  </tile>
+  <tile id="88">
+   <image width="256" height="512" source="assets/floor_E.png"/>
+  </tile>
+  <tile id="89">
+   <image width="256" height="512" source="assets/floor_N.png"/>
+  </tile>
+  <tile id="90">
+   <image width="256" height="512" source="assets/floor_S.png"/>
+  </tile>
+  <tile id="91">
+   <image width="256" height="512" source="assets/floor_W.png"/>
+  </tile>
+  <tile id="92">
+   <image width="256" height="512" source="assets/floorHalf_E.png"/>
+  </tile>
+  <tile id="93">
+   <image width="256" height="512" source="assets/floorHalf_N.png"/>
+  </tile>
+  <tile id="94">
+   <image width="256" height="512" source="assets/floorHalf_S.png"/>
+  </tile>
+  <tile id="95">
+   <image width="256" height="512" source="assets/floorHalf_W.png"/>
+  </tile>
+  <tile id="96">
+   <image width="256" height="512" source="assets/floorQuarter_E.png"/>
+  </tile>
+  <tile id="97">
+   <image width="256" height="512" source="assets/floorQuarter_N.png"/>
+  </tile>
+  <tile id="98">
+   <image width="256" height="512" source="assets/floorQuarter_S.png"/>
+  </tile>
+  <tile id="99">
+   <image width="256" height="512" source="assets/floorQuarter_W.png"/>
+  </tile>
+  <tile id="100">
+   <image width="256" height="512" source="assets/ladder_E.png"/>
+  </tile>
+  <tile id="101">
+   <image width="256" height="512" source="assets/ladder_N.png"/>
+  </tile>
+  <tile id="102">
+   <image width="256" height="512" source="assets/ladder_S.png"/>
+  </tile>
+  <tile id="103">
+   <image width="256" height="512" source="assets/ladder_W.png"/>
+  </tile>
+  <tile id="104">
+   <image width="256" height="512" source="assets/pole_E.png"/>
+  </tile>
+  <tile id="105">
+   <image width="256" height="512" source="assets/pole_N.png"/>
+  </tile>
+  <tile id="106">
+   <image width="256" height="512" source="assets/pole_S.png"/>
+  </tile>
+  <tile id="107">
+   <image width="256" height="512" source="assets/pole_W.png"/>
+  </tile>
+  <tile id="108">
+   <image width="256" height="512" source="assets/poleGroup_E.png"/>
+  </tile>
+  <tile id="109">
+   <image width="256" height="512" source="assets/poleGroup_N.png"/>
+  </tile>
+  <tile id="110">
+   <image width="256" height="512" source="assets/poleGroup_S.png"/>
+  </tile>
+  <tile id="111">
+   <image width="256" height="512" source="assets/poleGroup_W.png"/>
+  </tile>
+  <tile id="112">
+   <image width="256" height="512" source="assets/slab_E.png"/>
+  </tile>
+  <tile id="113">
+   <image width="256" height="512" source="assets/slab_N.png"/>
+  </tile>
+  <tile id="114">
+   <image width="256" height="512" source="assets/slab_S.png"/>
+  </tile>
+  <tile id="115">
+   <image width="256" height="512" source="assets/slab_W.png"/>
+  </tile>
+  <tile id="116">
+   <image width="256" height="512" source="assets/slabAngle_E.png"/>
+  </tile>
+  <tile id="117">
+   <image width="256" height="512" source="assets/slabAngle_N.png"/>
+  </tile>
+  <tile id="118">
+   <image width="256" height="512" source="assets/slabAngle_S.png"/>
+  </tile>
+  <tile id="119">
+   <image width="256" height="512" source="assets/slabAngle_W.png"/>
+  </tile>
+  <tile id="120">
+   <image width="256" height="512" source="assets/slabHalf_E.png"/>
+  </tile>
+  <tile id="121">
+   <image width="256" height="512" source="assets/slabHalf_N.png"/>
+  </tile>
+  <tile id="122">
+   <image width="256" height="512" source="assets/slabHalf_S.png"/>
+  </tile>
+  <tile id="123">
+   <image width="256" height="512" source="assets/slabHalf_W.png"/>
+  </tile>
+  <tile id="124">
+   <image width="256" height="512" source="assets/slabQuarter_E.png"/>
+  </tile>
+  <tile id="125">
+   <image width="256" height="512" source="assets/slabQuarter_N.png"/>
+  </tile>
+  <tile id="126">
+   <image width="256" height="512" source="assets/slabQuarter_S.png"/>
+  </tile>
+  <tile id="127">
+   <image width="256" height="512" source="assets/slabQuarter_W.png"/>
+  </tile>
+  <tile id="128">
+   <image width="256" height="512" source="assets/slope_E.png"/>
+  </tile>
+  <tile id="129">
+   <image width="256" height="512" source="assets/slope_N.png"/>
+  </tile>
+  <tile id="130">
+   <image width="256" height="512" source="assets/slope_S.png"/>
+  </tile>
+  <tile id="131">
+   <image width="256" height="512" source="assets/slope_W.png"/>
+  </tile>
+  <tile id="132">
+   <image width="256" height="512" source="assets/slopeHalf_E.png"/>
+  </tile>
+  <tile id="133">
+   <image width="256" height="512" source="assets/slopeHalf_N.png"/>
+  </tile>
+  <tile id="134">
+   <image width="256" height="512" source="assets/slopeHalf_S.png"/>
+  </tile>
+  <tile id="135">
+   <image width="256" height="512" source="assets/slopeHalf_W.png"/>
+  </tile>
+  <tile id="136">
+   <image width="256" height="512" source="assets/slopeQuarter_E.png"/>
+  </tile>
+  <tile id="137">
+   <image width="256" height="512" source="assets/slopeQuarter_N.png"/>
+  </tile>
+  <tile id="138">
+   <image width="256" height="512" source="assets/slopeQuarter_S.png"/>
+  </tile>
+  <tile id="139">
+   <image width="256" height="512" source="assets/slopeQuarter_W.png"/>
+  </tile>
+  <tile id="140">
+   <image width="256" height="512" source="assets/sloperCornerInner_E.png"/>
+  </tile>
+  <tile id="141">
+   <image width="256" height="512" source="assets/sloperCornerInner_N.png"/>
+  </tile>
+  <tile id="142">
+   <image width="256" height="512" source="assets/sloperCornerInner_S.png"/>
+  </tile>
+  <tile id="143">
+   <image width="256" height="512" source="assets/sloperCornerInner_W.png"/>
+  </tile>
+  <tile id="144">
+   <image width="256" height="512" source="assets/sloperCornerOuter_E.png"/>
+  </tile>
+  <tile id="145">
+   <image width="256" height="512" source="assets/sloperCornerOuter_N.png"/>
+  </tile>
+  <tile id="146">
+   <image width="256" height="512" source="assets/sloperCornerOuter_S.png"/>
+  </tile>
+  <tile id="147">
+   <image width="256" height="512" source="assets/sloperCornerOuter_W.png"/>
+  </tile>
+  <tile id="148">
+   <image width="256" height="512" source="assets/slopeSmall_E.png"/>
+  </tile>
+  <tile id="149">
+   <image width="256" height="512" source="assets/slopeSmall_N.png"/>
+  </tile>
+  <tile id="150">
+   <image width="256" height="512" source="assets/slopeSmall_S.png"/>
+  </tile>
+  <tile id="151">
+   <image width="256" height="512" source="assets/slopeSmall_W.png"/>
+  </tile>
+  <tile id="152">
+   <image width="256" height="512" source="assets/stairs_E.png"/>
+  </tile>
+  <tile id="153">
+   <image width="256" height="512" source="assets/stairs_N.png"/>
+  </tile>
+  <tile id="154">
+   <image width="256" height="512" source="assets/stairs_S.png"/>
+  </tile>
+  <tile id="155">
+   <image width="256" height="512" source="assets/stairs_W.png"/>
+  </tile>
+  <tile id="156">
+   <image width="256" height="512" source="assets/stairsCornerInner_E.png"/>
+  </tile>
+  <tile id="157">
+   <image width="256" height="512" source="assets/stairsCornerInner_N.png"/>
+  </tile>
+  <tile id="158">
+   <image width="256" height="512" source="assets/stairsCornerInner_S.png"/>
+  </tile>
+  <tile id="159">
+   <image width="256" height="512" source="assets/stairsCornerInner_W.png"/>
+  </tile>
+  <tile id="160">
+   <image width="256" height="512" source="assets/stairsCornerOuter_E.png"/>
+  </tile>
+  <tile id="161">
+   <image width="256" height="512" source="assets/stairsCornerOuter_N.png"/>
+  </tile>
+  <tile id="162">
+   <image width="256" height="512" source="assets/stairsCornerOuter_S.png"/>
+  </tile>
+  <tile id="163">
+   <image width="256" height="512" source="assets/stairsCornerOuter_W.png"/>
+  </tile>
+  <tile id="164">
+   <image width="256" height="512" source="assets/stairsOpen_E.png"/>
+  </tile>
+  <tile id="165">
+   <image width="256" height="512" source="assets/stairsOpen_N.png"/>
+  </tile>
+  <tile id="166">
+   <image width="256" height="512" source="assets/stairsOpen_S.png"/>
+  </tile>
+  <tile id="167">
+   <image width="256" height="512" source="assets/stairsOpen_W.png"/>
+  </tile>
+  <tile id="168">
+   <image width="256" height="512" source="assets/stairsOpenCornerInner_E.png"/>
+  </tile>
+  <tile id="169">
+   <image width="256" height="512" source="assets/stairsOpenCornerInner_N.png"/>
+  </tile>
+  <tile id="170">
+   <image width="256" height="512" source="assets/stairsOpenCornerInner_S.png"/>
+  </tile>
+  <tile id="171">
+   <image width="256" height="512" source="assets/stairsOpenCornerInner_W.png"/>
+  </tile>
+  <tile id="172">
+   <image width="256" height="512" source="assets/stairsOpenCornerOuter_E.png"/>
+  </tile>
+  <tile id="173">
+   <image width="256" height="512" source="assets/stairsOpenCornerOuter_N.png"/>
+  </tile>
+  <tile id="174">
+   <image width="256" height="512" source="assets/stairsOpenCornerOuter_S.png"/>
+  </tile>
+  <tile id="175">
+   <image width="256" height="512" source="assets/stairsOpenCornerOuter_W.png"/>
+  </tile>
+  <tile id="176">
+   <image width="256" height="512" source="assets/steps_E.png"/>
+  </tile>
+  <tile id="177">
+   <image width="256" height="512" source="assets/steps_N.png"/>
+  </tile>
+  <tile id="178">
+   <image width="256" height="512" source="assets/steps_S.png"/>
+  </tile>
+  <tile id="179">
+   <image width="256" height="512" source="assets/steps_W.png"/>
+  </tile>
+  <tile id="180">
+   <image width="256" height="512" source="assets/switchFloorOff_E.png"/>
+  </tile>
+  <tile id="181">
+   <image width="256" height="512" source="assets/switchFloorOff_N.png"/>
+  </tile>
+  <tile id="182">
+   <image width="256" height="512" source="assets/switchFloorOff_S.png"/>
+  </tile>
+  <tile id="183">
+   <image width="256" height="512" source="assets/switchFloorOff_W.png"/>
+  </tile>
+  <tile id="184">
+   <image width="256" height="512" source="assets/switchFloorOn_E.png"/>
+  </tile>
+  <tile id="185">
+   <image width="256" height="512" source="assets/switchFloorOn_N.png"/>
+  </tile>
+  <tile id="186">
+   <image width="256" height="512" source="assets/switchFloorOn_S.png"/>
+  </tile>
+  <tile id="187">
+   <image width="256" height="512" source="assets/switchFloorOn_W.png"/>
+  </tile>
+  <tile id="188">
+   <image width="256" height="512" source="assets/switchWallOff_E.png"/>
+  </tile>
+  <tile id="189">
+   <image width="256" height="512" source="assets/switchWallOff_N.png"/>
+  </tile>
+  <tile id="190">
+   <image width="256" height="512" source="assets/switchWallOff_S.png"/>
+  </tile>
+  <tile id="191">
+   <image width="256" height="512" source="assets/switchWallOff_W.png"/>
+  </tile>
+  <tile id="192">
+   <image width="256" height="512" source="assets/switchWallOn_E.png"/>
+  </tile>
+  <tile id="193">
+   <image width="256" height="512" source="assets/switchWallOn_N.png"/>
+  </tile>
+  <tile id="194">
+   <image width="256" height="512" source="assets/switchWallOn_S.png"/>
+  </tile>
+  <tile id="195">
+   <image width="256" height="512" source="assets/switchWallOn_W.png"/>
+  </tile>
+  <tile id="196">
+   <image width="256" height="512" source="assets/wall_E.png"/>
+  </tile>
+  <tile id="197">
+   <image width="256" height="512" source="assets/wall_N.png"/>
+  </tile>
+  <tile id="198">
+   <image width="256" height="512" source="assets/wall_S.png"/>
+  </tile>
+  <tile id="199">
+   <image width="256" height="512" source="assets/wall_W.png"/>
+  </tile>
+  <tile id="200">
+   <image width="256" height="512" source="assets/wallBattlement_E.png"/>
+  </tile>
+  <tile id="201">
+   <image width="256" height="512" source="assets/wallBattlement_N.png"/>
+  </tile>
+  <tile id="202">
+   <image width="256" height="512" source="assets/wallBattlement_S.png"/>
+  </tile>
+  <tile id="203">
+   <image width="256" height="512" source="assets/wallBattlement_W.png"/>
+  </tile>
+  <tile id="204">
+   <image width="256" height="512" source="assets/wallCorner_E.png"/>
+  </tile>
+  <tile id="205">
+   <image width="256" height="512" source="assets/wallCorner_N.png"/>
+  </tile>
+  <tile id="206">
+   <image width="256" height="512" source="assets/wallCorner_S.png"/>
+  </tile>
+  <tile id="207">
+   <image width="256" height="512" source="assets/wallCorner_W.png"/>
+  </tile>
+  <tile id="208">
+   <image width="256" height="512" source="assets/wallCornerHalf_E.png"/>
+  </tile>
+  <tile id="209">
+   <image width="256" height="512" source="assets/wallCornerHalf_N.png"/>
+  </tile>
+  <tile id="210">
+   <image width="256" height="512" source="assets/wallCornerHalf_S.png"/>
+  </tile>
+  <tile id="211">
+   <image width="256" height="512" source="assets/wallCornerHalf_W.png"/>
+  </tile>
+  <tile id="212">
+   <image width="256" height="512" source="assets/wallCurve_E.png"/>
+  </tile>
+  <tile id="213">
+   <image width="256" height="512" source="assets/wallCurve_N.png"/>
+  </tile>
+  <tile id="214">
+   <image width="256" height="512" source="assets/wallCurve_S.png"/>
+  </tile>
+  <tile id="215">
+   <image width="256" height="512" source="assets/wallCurve_W.png"/>
+  </tile>
+  <tile id="216">
+   <image width="256" height="512" source="assets/wallCurveHalf_E.png"/>
+  </tile>
+  <tile id="217">
+   <image width="256" height="512" source="assets/wallCurveHalf_N.png"/>
+  </tile>
+  <tile id="218">
+   <image width="256" height="512" source="assets/wallCurveHalf_S.png"/>
+  </tile>
+  <tile id="219">
+   <image width="256" height="512" source="assets/wallCurveHalf_W.png"/>
+  </tile>
+  <tile id="220">
+   <image width="256" height="512" source="assets/wallHalf_E.png"/>
+  </tile>
+  <tile id="221">
+   <image width="256" height="512" source="assets/wallHalf_N.png"/>
+  </tile>
+  <tile id="222">
+   <image width="256" height="512" source="assets/wallHalf_S.png"/>
+  </tile>
+  <tile id="223">
+   <image width="256" height="512" source="assets/wallHalf_W.png"/>
+  </tile>
+  <tile id="224">
+   <image width="256" height="512" source="assets/window_E.png"/>
+  </tile>
+  <tile id="225">
+   <image width="256" height="512" source="assets/window_N.png"/>
+  </tile>
+  <tile id="226">
+   <image width="256" height="512" source="assets/window_S.png"/>
+  </tile>
+  <tile id="227">
+   <image width="256" height="512" source="assets/window_W.png"/>
+  </tile>
+  <tile id="228">
+   <image width="256" height="512" source="assets/windowLeft_E.png"/>
+  </tile>
+  <tile id="229">
+   <image width="256" height="512" source="assets/windowLeft_N.png"/>
+  </tile>
+  <tile id="230">
+   <image width="256" height="512" source="assets/windowLeft_S.png"/>
+  </tile>
+  <tile id="231">
+   <image width="256" height="512" source="assets/windowLeft_W.png"/>
+  </tile>
+  <tile id="232">
+   <image width="256" height="512" source="assets/windowMiddle_E.png"/>
+  </tile>
+  <tile id="233">
+   <image width="256" height="512" source="assets/windowMiddle_N.png"/>
+  </tile>
+  <tile id="234">
+   <image width="256" height="512" source="assets/windowMiddle_S.png"/>
+  </tile>
+  <tile id="235">
+   <image width="256" height="512" source="assets/windowMiddle_W.png"/>
+  </tile>
+  <tile id="236">
+   <image width="256" height="512" source="assets/windowRight_E.png"/>
+  </tile>
+  <tile id="237">
+   <image width="256" height="512" source="assets/windowRight_N.png"/>
+  </tile>
+  <tile id="238">
+   <image width="256" height="512" source="assets/windowRight_S.png"/>
+  </tile>
+  <tile id="239">
+   <image width="256" height="512" source="assets/windowRight_W.png"/>
+  </tile>
+ </tileset>
+ <layer id="4" name="Floor" width="16" height="16">
+  <data encoding="base64">
+   WgAAAFoAAABaAAAAWgAAAFoAAABaAAAAWgAAAFoAAABaAAAAWgAAAFoAAABaAAAAWgAAAFoAAABaAAAAWgAAAFoAAABaAAAAWgAAAFoAAABaAAAAWgAAAFoAAABaAAAAWgAAAFoAAABaAAAAWgAAAFoAAABaAAAAWgAAAFoAAABaAAAAWgAAAFoAAABaAAAAWgAAAFoAAABaAAAAWgAAAFoAAABaAAAAWgAAAFoAAABaAAAAWgAAAFoAAABaAAAAWgAAAFoAAABaAAAAWgAAAFoAAABaAAAAWgAAAFoAAABaAAAAWgAAAFoAAABaAAAAWgAAAFoAAABaAAAAWgAAAFoAAABaAAAAWgAAAFoAAABaAAAAWgAAAFoAAABaAAAAWgAAAFoAAABaAAAAWgAAAFoAAABaAAAAWgAAAFoAAABaAAAAWgAAAFoAAABaAAAAWgAAAFoAAABaAAAAWgAAAFoAAABaAAAAWgAAAFoAAABaAAAAWgAAAFoAAABaAAAAWgAAAFoAAABaAAAAWgAAAFoAAABaAAAAWgAAAFoAAABaAAAAWgAAAFoAAABaAAAAWgAAAFoAAABaAAAAWgAAAFoAAABaAAAAWgAAAFoAAABaAAAAWgAAAFoAAABaAAAAWgAAAFoAAABaAAAAWgAAAFoAAABaAAAAWgAAAFoAAABaAAAAWgAAAFoAAABaAAAAWgAAAFoAAABaAAAAWgAAAFoAAABaAAAAWgAAAFoAAABaAAAAWgAAAFoAAABaAAAAWgAAAFoAAABaAAAAWgAAAFoAAABaAAAAWgAAAFoAAABaAAAAWgAAAFoAAABaAAAAWgAAAFoAAABaAAAAWgAAAFoAAABaAAAAWgAAAFoAAABaAAAAWgAAAFoAAABaAAAAWgAAAFoAAABaAAAAWgAAAFoAAABaAAAAWgAAAFoAAABaAAAAWgAAAFoAAABaAAAAWgAAAFoAAABaAAAAWgAAAFoAAABaAAAAWgAAAFoAAABaAAAAWgAAAFoAAABaAAAAWgAAAFoAAABaAAAAWgAAAFoAAABaAAAAWgAAAFoAAABaAAAAWgAAAFoAAABaAAAAWgAAAFoAAABaAAAAWgAAAFoAAABaAAAAWgAAAFoAAABaAAAAWgAAAFoAAABaAAAAWgAAAFoAAABaAAAAWgAAAFoAAABaAAAAWgAAAFoAAABaAAAAWgAAAFoAAABaAAAAWgAAAFoAAABaAAAAWgAAAFoAAABaAAAAWgAAAFoAAABaAAAAWgAAAFoAAABaAAAAWgAAAFoAAABaAAAAWgAAAFoAAABaAAAAWgAAAFoAAABaAAAAWgAAAFoAAABaAAAAWgAAAFoAAABaAAAAWgAAAA==
+  </data>
+ </layer>
+ <objectgroup id="5" name="Player">
+  <object id="2" name="mainPlayer" type="actor1m" x="168.163" y="1035.02" width="32" height="32"/>
+ </objectgroup>
+ <layer id="6" name="Foundation" width="16" height="16">
+  <data encoding="base64">
+   zwAAAMcAAADHAAAAxwAAAMcAAADHAAAAxwAAAMcAAADHAAAAxwAAAMcAAADHAAAAxwAAAMcAAADHAAAA0AAAAMUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMgAAADFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADIAAAAxQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAyAAAAMUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMgAAADFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADIAAAAxQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAyAAAAMUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMgAAADFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADIAAAAxQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAyAAAAMUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMgAAADFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADIAAAAxQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAyAAAAMUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMgAAADFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADIAAAAzQAAAMYAAADGAAAAxgAAAMYAAADGAAAAxgAAAMYAAADGAAAAxgAAAMYAAADGAAAAxgAAAMYAAADGAAAAzgAAAA==
+  </data>
+ </layer>
+ <objectgroup id="7" name="Collision">
+  <object id="5" type="wall" x="-0.0120581" y="0.194045" width="33.4502" height="2048.83"/>
+  <object id="6" type="wall" x="2033.86" y="-0.256461" width="13.9222" height="2048.37"/>
+ </objectgroup>
+</map>

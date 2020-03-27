@@ -2,15 +2,16 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components/macro';
 
-import Session from 'components/Session/Session';
+import 'melonjs';
+import Game from 'components/Game';
 
 const Wrapper = styled.div``;
 
-const App = props => (
-  <Wrapper>
-    <Session />
-  </Wrapper>
-);
+const App = props => {
+  return (
+    <Game />
+  )
+};
 
 App.propTypes = {
 };
